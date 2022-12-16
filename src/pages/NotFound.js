@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import "../App.css"
 
 const NotFound = () => {
   return (
-    <div>No cats in this alley</div>
+    <div className="container">
+    <p className="errorText">Error: No cats in this alley</p>
+    </div>
   )
 }
 

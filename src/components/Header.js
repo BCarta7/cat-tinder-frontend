@@ -27,26 +27,20 @@ function Header(args) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
+              <NavLink href="http://localhost:3000/catindex">
+                See all cats
+              </NavLink>
+              <NavLink href="http://localhost:3000/catshow">
+                See one particularly nice cat
+              </NavLink>
+              <NavLink href="http://localhost:3000/catnew">
+                Add your cat self to the list
+              </NavLink>
+              <NavLink href="http://localhost:3000/catedit">
+                Update you cat profile
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>
