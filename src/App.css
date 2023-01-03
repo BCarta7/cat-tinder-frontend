@@ -15,10 +15,10 @@ body {
     background-image: url("https://images.pexels.com/photos/3048516/pexels-photo-3048516.jpeg");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-}
-
-.errorText {
-    font-color: yellow;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100vw;
+    color: yellow;
     text-align: center;
+    font-size: 60px;
 }

@@ -7,10 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavbarText,
 } from 'reactstrap';
 
@@ -21,8 +17,9 @@ function Header(args) {
 
   return (
     <div>
-      <Navbar {...args}>
+      <Navbar {...args} color="info">
         <NavbarBrand href="/">Cat Tinder</NavbarBrand>
+        <NavbarText>Make those kitty dreams come true</NavbarText>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
