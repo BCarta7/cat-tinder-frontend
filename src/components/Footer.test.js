@@ -6,7 +6,8 @@ import { BrowserRouter } from "react-router-dom"
 describe("<Footer />", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div")
-    render(              <BrowserRouter>
+    render(              
+      <BrowserRouter>
         <Footer />
       </BrowserRouter>,
       div)
