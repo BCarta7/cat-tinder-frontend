@@ -8,10 +8,11 @@ import CatShow from './pages/CatShow'
 import CatNew from './pages/CatNew'
 import CatEdit from './pages/CatEdit'
 import NotFound from './pages/NotFound'
-import cats from "./mockCats"
+import mockCats from "./mockCats"
 import { Routes, Route } from "react-router-dom"
 
 function App() {
+  const [cats, setcats] = useState(mockCats)
 
   console.log(cats)
   return (
@@ -19,8 +20,8 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/catindex" element={<CatIndex />} />
-      <Route path="/catshow" element={<CatShow />} />
+      <Route path="/catindex" element={<CatIndex cats={cats} />} />
+      <Route path="/catshow/:id" element={<CatShow cats={cats} />} />
       <Route path="/catnew" element={<CatNew />} />
       <Route path="/catedit" element={<CatEdit />} />
       <Route path="*" element={<NotFound />} />
