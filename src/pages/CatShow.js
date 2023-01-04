@@ -46,6 +46,9 @@ const CatShow = ({cats}) => {
             Back to the catshow
           </Button>
         </NavLink>
+          <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">
+            Edit Cat Profile
+          </NavLink>
       </CardBody>
       </Card>
     </main>
