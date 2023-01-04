@@ -13,6 +13,9 @@ import { Routes, Route } from "react-router-dom"
 
 function App() {
   const [cats, setcats] = useState(mockCats)
+  const createCat = (cat) => {
+    console.log(cat)
+  }
 
   console.log(cats)
   return (
@@ -22,7 +25,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/catindex" element={<CatIndex cats={cats} />} />
       <Route path="/catshow/:id" element={<CatShow cats={cats} />} />
-      <Route path="/catnew" element={<CatNew />} />
+      <Route path="/catnew" element={<CatNew createCat={createCat} />} />
       <Route path="/catedit" element={<CatEdit />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
