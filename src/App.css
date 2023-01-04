@@ -3,11 +3,11 @@ body {
 }
 
 .footer {
-    position: absolute;
-    bottom: 1px;
-    margin-left: 10px;
+    position: bottom;
     text-align: center;
     background-color: white;
+    width: 100vw;
+    margin-top: 15px;
     
 }
 
@@ -21,4 +21,20 @@ body {
     color: yellow;
     text-align: center;
     font-size: 60px;
+}
+
+.card {
+    margin: 2rem 0;
+}
+
+.allCats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.one-cat {
+    display: flex;
+    justify-content: center;
 }

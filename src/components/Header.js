@@ -19,16 +19,13 @@ function Header(args) {
     <div>
       <Navbar {...args} color="info">
         <NavbarBrand href="/">Cat Tinder</NavbarBrand>
-        <NavbarText>Make those kitty dreams come true</NavbarText>
+        <NavbarText>Make your kitty dreams come true</NavbarText>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
               <NavLink href="http://localhost:3000/catindex">
                 See all cats
-              </NavLink>
-              <NavLink href="http://localhost:3000/catshow">
-                See one particularly nice cat
               </NavLink>
               <NavLink href="http://localhost:3000/catnew">
                 Add your cat self to the list
