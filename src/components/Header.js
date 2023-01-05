@@ -24,14 +24,11 @@ function Header(args) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="http://localhost:3000/catindex">
+              <NavLink href="/catIndex">
                 See all cats
               </NavLink>
-              <NavLink href="http://localhost:3000/catnew">
+              <NavLink href="/catNew">
                 Add your cat self to the list
-              </NavLink>
-              <NavLink href="http://localhost:3000/catedit">
-                Update you cat profile
               </NavLink>
             </NavItem>
           </Nav>

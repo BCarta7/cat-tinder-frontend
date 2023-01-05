@@ -10,10 +10,12 @@ import {
   Button,
 } from 'reactstrap';
 
-const CatShow = ({cats}) => {
+const CatShow = ({cats, deleteCat}) => {
   const { id } = useParams()
   let currentCat = cats.find((cat) => cat.id === +id)
   console.log(currentCat)
+  let deleteMe = () => 
+    deleteCat(id)
 
   return (
     <>
@@ -47,7 +49,10 @@ const CatShow = ({cats}) => {
           </Button>
         </NavLink>
           <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">
-            Edit Cat Profile
+            <Button>Edit Cat Profile</Button>
+          </NavLink>
+          <NavLink to="/catindex">
+            <Button onClick={deleteMe}>Delete Cat Profile</Button>
           </NavLink>
       </CardBody>
       </Card>
