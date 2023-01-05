@@ -31,6 +31,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 10px;
     flex-direction: row;
 }
 
@@ -43,3 +44,48 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+.homePage {
+    text-align: center;
+}
+
+.homeTitle {
+    margin-top: 40px;
+}
+
+.homeBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px
+}
+
+.homeText {
+    width: 600px;
+}
+
+.homeImage {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: silver;
+    height: 400px;
+    width: 300px;
+  }
+
+  .homeLink {
+    margin-top: 40px;
+    border-style: solid;
+    width: 150px;
+    background-color: #0dcaf0;;
+  }
+
+  .cardButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .Button {
+    border-style: solid;
+  }

@@ -8,9 +8,10 @@ import {
 } from 'reactstrap';
 
 const CatIndex = ({cats}) => {
+  const showcats = cats?.sort(() => 0.5 - Math.random()).slice(0,3)
   return (
     <main className="allCats">
-  {cats?.map((cat, index) => {
+  {showcats?.map((cat, index) => {
   return (
     <>
     <NavLink to={`/catshow/${cat.id}`} style={{color:"black"}}>
