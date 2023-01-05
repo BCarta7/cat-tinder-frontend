@@ -43,6 +43,7 @@ const CatShow = ({cats, deleteCat}) => {
         <CardText>
           {currentCat.enjoys}
         </CardText>
+        <div className="cardButtons">
         <NavLink to ={'/catIndex'}>
           <Button>
             Back to the catshow
@@ -54,6 +55,7 @@ const CatShow = ({cats, deleteCat}) => {
           <NavLink to="/catindex">
             <Button onClick={deleteMe}>Delete Cat Profile</Button>
           </NavLink>
+          </div>
       </CardBody>
       </Card>
     </main>

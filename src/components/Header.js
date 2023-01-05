@@ -19,7 +19,7 @@ function Header(args) {
     <div>
       <Navbar {...args} color="info">
         <NavbarBrand href="/">Cat Tinder</NavbarBrand>
-        <NavbarText>Make your kitty dreams come true</NavbarText>
+        <NavbarText>Member status: Standard</NavbarText>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>

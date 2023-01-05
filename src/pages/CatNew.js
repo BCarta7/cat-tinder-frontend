@@ -15,6 +15,7 @@ const CatNew = ({ createCat }) => {
   }
   const handleSubmit = () => {
     createCat(newCat)
+    alert("Cat submission complete!")
     navigate("/catindex")
   }
   return (
