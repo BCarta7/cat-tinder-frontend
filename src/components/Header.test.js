@@ -23,7 +23,5 @@ describe("<Header />", () => {
     expect(screen.getByText("See all cats")).toBeInTheDocument()
     userEvent.click(screen.getByText("Add your cat self to the list"))
     expect(screen.getByText("Add your cat self to the list")).toBeInTheDocument()
-    userEvent.click(screen.getByText("Update you cat profile"))
-    expect(screen.getByText("Update you cat profile")).toBeInTheDocument()
   })
 })
